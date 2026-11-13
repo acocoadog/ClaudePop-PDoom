@@ -1,0 +1,7 @@
+# 出片用（Python 3.11+，开发时用的 3.14）。另需系统里有 ffmpeg / ffprobe。
+# 版本锁死：Pillow 13 画字的结果不一样，会和成片差几百帧。用下面这组版本能逐帧复现成片。
+numpy==2.5.3
+opencv-python-headless==5.0.0.93
+pillow==12.3.0
+rembg==2.0.85        # 抠图（isnet-anime）。仓库已带抠图缓存 *.alpha.npz，不改片段就不会真跑
+onnxruntime==1.30.0  # rembg 的推理后端

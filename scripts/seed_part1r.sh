@@ -1,0 +1,15 @@
+#!/bin/zsh
+# 第一部分重做 C 段（ChatGPT, please don't eat me alive）Seedance。用法: seed_part1r.sh c [--yes]（不加 --yes 只出计划，不花钱）
+# 09-30 用户定：只跑一条，片段不全放——ChatGPT 段放「怪物爬出来越变越大」、don't eat me 段放「Claude 惊恐表情（数码推近）」、
+# alive 放「一口吞掉」，然后黑场。非唱跳，不传音频。
+# 首帧 = 旧 s4 片段的末帧（房间变红、屏幕咧开獠牙、Claude 从头发底下偷看）：16.18 起那段变红小动画留着，
+# 保留它播到末帧（≈16.92），新片段从同一帧接下去，不再需要推镜和花屏转场。
+# 720p：惊恐表情要从全景里数码推近到脸，480p 推 3 倍太糊。
+cd "${0:A:h}/.."   # 项目根（脚本所在 scripts/ 的上一级）
+C=(xk-video --model 2.0-fast --res 720p --ratio 16:9 --duration 8 --no-audio)
+case $1 in
+c) $C --first 镜头/shot_s4_servant480-last.jpg --out 镜头/shot_p1r_c_eat720.mp4 ${@:2} "2D retro 1990s anime, exactly matching the first frame's style: the night bedroom lit blood red, the maid girl bent over behind the desk peeking up from under her hair, and the beige CRT monitor with a gold paper crown whose screen shows a grinning pixel face full of sharp shark teeth. Limited animation like a 1990s anime: strong clear held poses, 12 drawings per second. Locked camera, single shot, no cuts. 0–3s: the screen glass bulges outward and the monster squeezes out of the CRT: a huge glowing cyan pixel creature whose face is that same grinning pixel face, a mouth full of shark teeth, a body of tangled black cables; it keeps growing bigger and bigger until it towers over the desk and fills the upper half of the room, the gold paper crown sliding onto its head. 3–5s: the maid girl straightens up and stares up at it, her face turns pale with terror, pupils shrink to tiny dots, tears well up, she trembles and drops the tray. 5–6.5s: the monster opens its jaws enormously wide and lunges down at her, swallowing her whole in one bite, the jaws snap shut. 6.5–8s: the room goes completely dark.";;
+# 09-30 FOOM 大招：赛璐璐视频版（身体定住、只有头发 / 缎带 / 裙摆被背后爆炸的气浪掀起）。首帧 = 底图铺品红，480p 5 秒。
+# 片段 1.0s（冲击波打到）对 25.58 FOOM；25.08–25.58 蓄力段用底图原图，不用片段
+foom) $C --res 480p --duration 5 --first 素材/关键帧/p1r_foom_首帧_品红.png --out 镜头/shot_p1r_foom_cel480.mp4 ${@:2} "2D retro 1990s anime, exactly matching the reference image style, costume and character. Traditional cel animation with a held body cel: her face with tightly shut eyes and open shouting mouth, her torso, both arms, the raised pointing hand, the fist at her chest and her legs stay completely frozen and motionless the whole time, like a painted cel that does not move. Only her long hair, the orange hair ribbons and the layered tulle skirt move, blasted by a violent shockwave wind from a huge explosion behind her, animated in limited animation at 12 drawings per second with strong clear clumps. 0–1s: total stillness, the hair hangs calm, only one or two strands tremble. 1s: the shockwave hits from behind — in one instant her whole mass of hair, the ribbons and the skirt ruffles whip violently forward and out to both sides, streaming toward the camera. 1–3s: the hair and skirt thrash and snap hard in the roaring wind. 3–5s: the wind keeps blowing strongly, hair streaming and fluttering. Locked camera, flat magenta background stays unchanged, single shot, no cuts. Use @图像1 as the first frame." ;;
+esac

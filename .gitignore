@@ -1,0 +1,18 @@
+# 原曲有版权，自己准备（见 素材/音频/README.md）
+素材/音频/*.mp3
+素材/音频/*.wav
+
+# Zpix 像素字授权不允许随仓库分发，自己下载（见 素材/字体/README.md）
+素材/字体/zpix.ttf
+
+# 渲染输出
+成片/*
+!成片/README.md
+素材/ClaudeAnimationBase/out/
+素材/ClaudeAnimationBase/node_modules/
+
+# 预览、临时文件
+*.sheet.png
+x.png
+__pycache__/
+.DS_Store
