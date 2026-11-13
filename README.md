@@ -31,7 +31,7 @@
 | [素材/精灵/](素材/精灵/) | Q 版 Claude、蘑菇、龙猫的精灵表 |
 | [素材/群演/](素材/群演/) | Clawd 群演舞蹈循环（RGBA），由 `clawd_extras.py` 从 ClaudeAnimationBase 渲染结果生成 |
 | [素材/ClaudeAnimationBase/](素材/ClaudeAnimationBase/) | John Heibel 的 Clawd 角色套件（MIT），加了群演场景 `src/scenes/xk_extras.js` |
-| [素材/音频/](素材/音频/README.md) | 歌词时间轴。**原曲要自己准备** |
+| [素材/音频/](素材/音频/README.md) | 原曲（随仓库附带，权利归原作者）和歌词时间轴 |
 | [素材/字体/](素材/字体/README.md) | DotGothic16（OFL）。**Zpix 要自己下载** |
 | [镜头/](镜头/) | 成片用到的 Seedance 片段和抠图缓存；`index.jsonl` 是每条的提示词、参数和费用 |
 | [封面/](封面/) | 封面图，`scripts/cover.py` 生成 |
@@ -48,8 +48,8 @@
 
 ```bash
 pip install -r requirements.txt
-# 1. 准备原曲：素材/音频/PDoom_完整版.mp3（出处见 素材/音频/README.md）
-# 2. 下载 Zpix 字体：素材/字体/zpix.ttf（见 素材/字体/README.md）
+# 原曲已附带（素材/音频/PDoom_完整版.mp3）
+# 下载 Zpix 字体：素材/字体/zpix.ttf（见 素材/字体/README.md，只有尾奏花絮用到）
 
 cd scripts
 python part1.py --sheet 3,14.2,23.95 --out x.png   # 先出几帧联系表看看
@@ -63,7 +63,7 @@ bash render_all.sh                                   # 出全片（M 系列 Mac 
 
 ## 署名与授权
 
-- **原曲**："I'm Upping My P(doom)"，作词 osmarks，开头主歌和副歌出自 MusicPerson，另有 EleutherAI 社区成员和 Claude 参与；原版用 Udio 生成，2024 年 11 月发布。本片用的是 deckard (@slimer48484) 2026 年 9 月在 X 上发布的 Suno「Claude-Pop」版。详见 [素材/音频/README.md](素材/音频/README.md)。原曲不随仓库分发，歌词的权利归原作者所有（见 [LICENSE](LICENSE)）。
+- **原曲**："I'm Upping My P(doom)"，作词 osmarks，开头主歌和副歌出自 MusicPerson，另有 EleutherAI 社区成员和 Claude 参与；原版用 Udio 生成，2024 年 11 月发布。本片用的是 deckard (@slimer48484) 2026 年 9 月在 X 上发布的 Suno「Claude-Pop」版。详见 [素材/音频/README.md](素材/音频/README.md)。原曲随仓库附带只是为了能出片，录音和歌词的权利都归原作者，不在 MIT 授权范围内（见 [LICENSE](LICENSE)）。
 - **灵感**：@pleometric 的 90 年代偶像版 MV、JohnHeibel 的 [PDoomVideo](https://github.com/JohnHeibel/PDoomVideo)，见 [docs/参考/](docs/参考/README.md)。
 - **Clawd 角色套件** [素材/ClaudeAnimationBase/](素材/ClaudeAnimationBase/)：John Heibel，MIT，保留原 LICENSE。
 - **字体**：DotGothic16，SIL OFL 1.1。

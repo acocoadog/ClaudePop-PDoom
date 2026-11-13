@@ -1,10 +1,12 @@
 # 音频
 
-原曲有版权，仓库里不放。出片前自己准备好，放在这里：
+原曲随仓库附带，下载后可以直接出片（同曲的 [PDoomVideo](https://github.com/JohnHeibel/PDoomVideo)、[mexicat/pdoom-video](https://github.com/mexicat/pdoom-video) 也附带了同一个文件）：
 
 | 文件 | 用途 |
 |---|---|
-| `PDoom_完整版.mp3` | **必需**。全片的时间轴、频谱道具、最终音轨、`findoffset.py` 都读它（156.65 秒的 Claude-Pop 版） |
+| `PDoom_完整版.mp3` | 全片的时间轴、频谱道具、最终音轨、`findoffset.py` 都读它（156.65 秒的 Claude-Pop 版） |
+
+**这首歌的权利归原作者，不在本仓库的 MIT 授权范围内**，附带它只是为了能出片。如果你是权利人、希望移除，请开 issue 联系。
 
 ## 原曲
 
@@ -15,8 +17,6 @@
 - **本片用的版本**：[deckard (@slimer48484)](https://x.com/slimer48484/status/2097752569212756134) 2026 年 9 月 9 日在 X 上发布的 Suno「Claude-Pop」版。osmarks 的说明页记载，Suno 版由 “wave | everybody fan club :3” 生成。
 
 歌词和录音的权利都归原作者，不在本仓库的 MIT 授权范围内。
-
-
 
 时间轴都是按这一版对的，换别的版本节拍会对不上。
 

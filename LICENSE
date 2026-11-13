@@ -25,7 +25,10 @@ SOFTWARE.
 Not covered by this license (see their own notices):
 - 素材/ClaudeAnimationBase/ — MIT, Copyright (c) 2026 John Heibel (素材/ClaudeAnimationBase/LICENSE)
 - 素材/字体/DotGothic16-Regular.ttf — SIL Open Font License 1.1 (素材/字体/OFL.txt)
-- The song "I'm Upping My P(doom)" is not included and belongs to its authors.
+- 素材/音频/PDoom_完整版.mp3 — the song "I'm Upping My P(doom)" (the Suno
+  "Claude-Pop" version posted by deckard, @slimer48484) is included only so the
+  video can be rendered. It belongs to its authors and is not covered by this
+  license.
 - The lyrics of "I'm Upping My P(doom)" (in 素材/音频/歌词时间轴.md and the lyric
   strings in scripts/) belong to their authors (MusicPerson, osmarks and other
   contributors) and are included only for reference. They are not covered by
